@@ -42,6 +42,7 @@
         header {
             margin-bottom: 32px;
             padding: 8px 4px;
+            text-align: center;
         }
 
         .eyebrow {
@@ -70,20 +71,27 @@
         }
 
         h1 {
-            max-width: 720px;
+            max-width: none;
+            margin-left: auto;
+            margin-right: auto;
             font-family: 'Space Grotesk', sans-serif;
-            font-size: clamp(2.2rem, 5vw, 4rem);
+            font-size: clamp(2rem, 5vw, 4rem);
             line-height: 1.05;
             letter-spacing: -0.06em;
+            white-space: nowrap;
             margin-bottom: 14px;
             background: linear-gradient(110deg, #f4f5ff 15%, #a59eff 90%);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
+            font-size: clamp(1.75rem, 8vw, 3rem);
+            letter-spacing: -0.07em;
         }
 
         .subtitle {
             max-width: 620px;
+            margin-left: auto;
+            margin-right: auto;
             color: var(--muted);
             font-size: 1.05rem;
             line-height: 1.6;
@@ -361,6 +369,18 @@
             border-top: 1px solid var(--line);
         }
 
+        footer {
+            padding: 28px 0 4px;
+            color: var(--muted);
+            font-size: 0.82rem;
+            text-align: center;
+        }
+
+        footer strong {
+            color: var(--primary-dark);
+            font-weight: 600;
+        }
+
         @media (max-width: 768px) {
             body {
                 padding: 24px 14px 36px;
@@ -373,6 +393,11 @@
             .card {
                 padding: 20px;
                 border-radius: 20px;
+            }
+
+            h1 {
+                font-size: clamp(1.75rem, 8vw, 3rem);
+                letter-spacing: -0.07em;
             }
 
             .chat-container {
@@ -394,8 +419,8 @@
     <div class="container">
         <header>
             <div class="eyebrow">Your personal study companion</div>
-            <h1>Turn your documents into answers.</h1>
-            <p class="subtitle">Upload course material, ask thoughtful questions, and get intelligent answers powered by Digiskills.pk.</p>
+            <h1>Lexi: Your AI Knowledge Companion</h1>
+            <p class="subtitle">Upload course material, ask thoughtful questions, and get intelligent answers powered by Ibrahim Irfan.</p>
         </header>
 
         <div class="main-content">
@@ -432,6 +457,7 @@
                                 👋 Hello! Upload some documents and I'll help you find answers from them. Ask me anything about your uploaded content!
                             </div>
                         </div>
+
                     </div>
 
                     <div class="input-area">
@@ -446,8 +472,11 @@
                         </button>
                     </div>
                 </div>
+
             </div>
         </div>
+
+        <footer>Designed and Developed by <strong>Ibrahim Irfan</strong> &middot; All Rights Reserved</footer>
     </div>
 
     <script>
